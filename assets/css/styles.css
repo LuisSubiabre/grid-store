@@ -25,6 +25,7 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
+    background-color: #ede4ff;
 }
 
 .container {
@@ -33,31 +34,53 @@ body{
     "navbar navbar"
     "nav main"
     "foot foot";
-    grid-template-rows: 50px 1fr 30px;
-    grid-template-columns: 20% 80%;
+    grid-template-rows: 80px 81fr 40px;
+    grid-template-columns: 1fr 8fr;
     height: 100vh;
 }
 
 .container > navbar {
     grid-area: navbar;
     background-color: #ddcdff;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container > navbar img {
+width: 300px;
+height: 100px;
 }
 
 .container > nav {
     grid-area: nav;
     display: flex;
     flex-direction: column;
-    background-color: #ede4ff;
+    padding: 2em;
+    align-self: start;
+
 }
+.container > nav h4 {
+    font-size: 18px;
+    margin-bottom: 10px ;
+    
+}
+.container > nav ul {
+    list-style: none;
+}
+
+.container > nav small {
+    color: #666;
+}
+
 
 .container > main {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(100px, auto);
-    gap: 1rem;
-    background-color: #f5f0ff;
-    padding: .5em;
+    gap: 2rem;
+    padding: 2em;
 }
 
 .card {
@@ -65,10 +88,12 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: white;
+
 }
 .card:hover{
     border: 1px solid #ab73ff;
     box-shadow: 2px 1px 1px #ab73ff;
+    transform: rotate(2deg);
 }
 
 .card img {
@@ -76,10 +101,11 @@ body{
 }
 
 .card h4 {
+    font-size: 24px;
     color: #ab73ff;
 }
 .card > small {
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .card-footer{
@@ -100,14 +126,25 @@ body{
     cursor: pointer;
     background-color: #8000ff;
     color: white;
+    font-size: 16px;
     font-weight: 600;
 }
 .card-footer button:hover{
     background-color: #ab73ff;
     color: white;
+
 }
 
 .container > footer {
     grid-area: foot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-color: #ddcdff;
+}
+#stick{
+    position: sticky;
+    top: 0;
+    align-self: start;
 }
