@@ -39,7 +39,7 @@ body{
     height: 100vh;
 }
 
-.container > navbar {
+.container navbar {
     grid-area: navbar;
     background-image: url("./../imgs/bg-top.png");
     background-repeat: no-repeat;
@@ -50,12 +50,12 @@ body{
     
 }
 
-.container > navbar img {
+.container navbar img {
 width: 300px;
 height: 100px;
 }
 
-.container > nav {
+.container nav {
     grid-area: nav;
     display: flex;
     flex-direction: column;
@@ -63,21 +63,21 @@ height: 100px;
     align-self: start;
 
 }
-.container > nav h4 {
+.container nav h4 {
     font-size: 18px;
     margin-bottom: 10px ;
     
 }
-.container > nav ul {
+.container nav ul {
     list-style: none;
 }
 
-.container > nav small {
+.container nav small {
     color: #666;
 }
 
 
-.container > main {
+.container main {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -116,7 +116,6 @@ height: 100px;
     flex-direction: column;
     justify-content: end;
     align-content: end;
-    /*background-color: blue;*/
     height: 100%;
     width: 100%;
     padding-top: 14px;
@@ -143,7 +142,7 @@ height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #8000ff;
     background-color: #ddcdff;
 }
 #stick{
